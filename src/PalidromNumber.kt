@@ -15,7 +15,7 @@ fun main() {
    }
    else
    {
-       println("Enter Number $tempNumber is not Palidrom Number")
+       println("Enter Number $tempNumber is not Palindrom Number")
    }
 
 }

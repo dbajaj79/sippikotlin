@@ -11,8 +11,6 @@ fun main() {
         if (i > smallerno) {
             smallerno = i
         }
-
-
     }
     println("Smaller No of Array Element=$smallerno")
 

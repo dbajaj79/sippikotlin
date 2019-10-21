@@ -10,7 +10,6 @@ fun main() {
     }
     else
     {
-
         for(i in 1..number)
         {
           print("$t1,")
