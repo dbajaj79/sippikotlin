@@ -1,5 +1,4 @@
 package oopsexample
-class Sample()
 class  ConstructorDemo ( var name:String,var age:String)
 {
 
@@ -74,7 +73,7 @@ class  ConstructorDemo constructor( name:String,age:String)
 fun main() {
     val demo = ConstructorDemo("Deepak","10")
     demo.printValues()
-    val sample = Sample()
+
 
 
 }
