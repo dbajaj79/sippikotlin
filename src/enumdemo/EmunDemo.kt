@@ -23,5 +23,5 @@ fun main() {
     printHex(ColorWithRGB.BLUE.rgb())
 
     printHex(ColorWithTemperature.BLACK.rgb())
-    println(ColorWithTemperature.BLACK)
+    println(ColorWithTemperature.BLACK.temperature)
 }

@@ -1,24 +1,25 @@
 package enumdemo
 
-enum class ColorWithTemperature(val r:Int,val g:Int,val b:Int)
+enum class  Temperature{
+    WARM,HOT,COLD
+}
+enum class ColorWithTemperature (val r:Int,val g:Int,val b:Int)
 {
-    BLUE(0,0,255)
+    BLUE(10,20,30)
     {
-        val tempeature=Temprature.COLD
+        override val temperature=Temperature.COLD
     },
-    BLACK(0,0,255)
+    BLACK(20,30,50)
     {
-        val tempeature=Temprature.WARM
-    },
-    GREEN(0,0,255)
-    {
-        val tempeature=Temprature.HOT
+        override val temperature=Temperature.HOT
     };
-    init {
+    init{
         require(r in 0..255)
-        require(r in 0..255)
-        require(r in 0..255)
+        require(g in 0..255)
+        require(b in 0..255)
     }
-    fun rgb()= r shl 16+g shl 8 + b
+    fun rgb()=r shl 16+g shl 8 + b
+
+    abstract val temperature:Temperature
 
 }
